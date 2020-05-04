@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="{{ .Lang }}">
+
+  <head>
+    {{ partial "head-meta.html" . }}
+
+    <link rel="canonical" href="{{ .Permalink }}">
+
+    <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
+
+    {{ $mcCSS :=  resources.Get "css/mailchimp.css" }}
+    {{ $tufteCSS :=  resources.Get "css/tufte.css" }}
+    {{ $latexCSS := resources.Get "css/latex.css" }}
+    {{ $styleCSS := resources.Get "css/style.css" }}
+    {{ $syntaxCSS := resources.Get "css/syntax.css" }}
+
+    {{ $bundle := slice $mcCSS $tufteCSS $latexCSS $styleCSS $syntaxCSS | resources.Concat "css/bundle.css" | minify | fingerprint }}
+    <link rel="stylesheet" href="{{ $bundle.Permalink }}" integrity="{{ $bundle.Data.Integrity }}" crossorigin="anonymous">
+
+    {{ if .RSSLink }}
+    {{ "<!-- RSS 2.0 feed -->" | safeHTML }}
+    <link href="{{ .RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
+    {{ end }}
+  </head>
+
+  <body>
+    {{ partial "navbar.html" . }}
+
+    {{ block "main" . }}
+      <!-- The part of the page that begins to differ between templates -->
+    {{ end }}
+
+    <script>
+      function toggleMobileNav() {
+        var menuEl = document.getElementById('mobile-nav')
+        var isHidden = window.getComputedStyle(menuEl).display === 'none'
+        if (isHidden) {
+          menuEl.style.display = 'block'
+        } else {
+          menuEl.style.display = 'none'
+        }
+      }
+      function setupMenu() {
+        var menuButton = document.getElementById('nav-menu')
+        menuButton.addEventListener('click', toggleMobileNav)
+      }
+      window.onload = function () {
+        setupMenu()
+      }
+    </script>
+  </body>
+
+</html>
+
+{{- /* vim: set ts=2 sw=2 et: */}}

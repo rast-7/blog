@@ -1,0 +1,16 @@
+{{ $dateFormat := default "Jan 2, 2006" (index .Site.Params "date_format") }}
+
+<section>
+  <header>
+    <h2 class="post-header--mini"><a href="{{ .Permalink }}">{{ .Title | markdownify }}</a></h2>
+    <div class="post-meta post-meta--muted sans">
+      <time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">{{ .Date.Format $dateFormat }}</time>
+      <span class="middot-divider"></span>
+      <span>{{ .ReadingTime }} minute read</span>
+    </div>
+  </header>
+    <p>{{ .Summary }}</p>
+    <p><a href='{{ .Permalink }}' class="readmore">{{ i18n "readMore" }}</a></p>
+</section>
+
+{{- /* vim: set ts=2 sw=2 et: */}}

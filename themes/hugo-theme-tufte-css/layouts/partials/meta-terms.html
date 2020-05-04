@@ -1,0 +1,12 @@
+{{ if .Params.categories }}
+<div class="tag-collection">
+  Categories: {{ range $index, $category := .Params.categories }}{{ if gt $index 0 }}, {{ end }}<a href="{{ "/categories/" | relLangURL }}{{ . | urlize }}" rel="category tag">{{ . }}</a>{{ end }}
+</div>
+{{ end }}
+{{ if .Params.tags }}
+<div class="tag-collection">
+  Tags: {{ range $index, $tag := .Params.tags }}{{ if gt $index 0 }}, {{ end }}<a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}" rel="tag">{{ . }}</a>{{ end }}
+</div>
+{{ end }}
+
+{{- /* vim: set ts=2 sw=2 et: */}}

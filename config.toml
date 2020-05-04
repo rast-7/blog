@@ -1,0 +1,7 @@
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "Ups and Downs"
+theme = "hugo-theme-tufte-css"
+
+[permalinks]
+  article = "/:year/:month/:title/"
