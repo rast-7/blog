@@ -1,4 +1,4 @@
-baseURL = "http://example.org/"
+baseURL = "http://rast-7.github.io"
 languageCode = "en-us"
 title = "Ups and Downs"
 theme = "hugo-theme-tufte-css"
