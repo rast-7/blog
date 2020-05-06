@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Articles on Ups and Downs</title>
-    <link>http://rast-7.github.io/articles/</link>
-    <description>Recent content in Articles on Ups and Downs</description>
+    <title>Ups and Downs</title>
+    <link>https://github.com/rast-7/rast-7.github.io/tree/master/</link>
+    <description>Recent content on Ups and Downs</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 03 May 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://rast-7.github.io/articles/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://github.com/rast-7/rast-7.github.io/tree/master/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>First</title>
-      <link>http://rast-7.github.io/articles/first/</link>
+      <link>https://github.com/rast-7/rast-7.github.io/tree/master/articles/first/</link>
       <pubDate>Sun, 03 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://rast-7.github.io/articles/first/</guid>
+      <guid>https://github.com/rast-7/rast-7.github.io/tree/master/articles/first/</guid>
       <description>The first time something comes up on the blog! Hope this works!</description>
     </item>
     
