@@ -1,4 +1,4 @@
-baseURL = "http://rajatasthana.com"
+baseURL = "https://rajatasthana.com"
 languageCode = "en-us"
 title = "Ups and Downs"
 theme = "hugo-theme-tufte-css"
