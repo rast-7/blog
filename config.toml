@@ -1,4 +1,4 @@
-baseURL = "https://github.com/rast-7/rast-7.github.io/tree/master/"
+baseURL = "http://rajatasthana.com"
 languageCode = "en-us"
 title = "Ups and Downs"
 theme = "hugo-theme-tufte-css"
