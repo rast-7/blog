@@ -1,4 +1,8 @@
-# The First Kernel Module that I wrote
+---
+title: "The first kernel module that I wrote"
+date: "2021-10-11"
+type: "article"
+---
 
 The first program I ever wrote was a C program to print "Hello, world" on stdout; and that was exactly what my first kernel module did. It wrote "Hello world", but this time to the kernel log buffer. This module did one extra thing though, it wrote "Goodbye world" to the kernel log buffer when removed from the kernel memory.
 
