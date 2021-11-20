@@ -38,7 +38,7 @@ So, the first 3 lines, unlike our usual user space C code, these are kernel head
 
  `/lib/modules/$(uname -r)`. Here is how it looks on my system:
 
-![Untitled](The%20First%20Kernel%20Module%20that%20I%20wrote%2046ae6d53b6c047da9b865306bfc8a195/Untitled.png)
+![Untitled](https://raw.githubusercontent.com/rast-7/blog/2063e8c1dbe573d10e212a55154052762d75faa9/content/articles/The%20First%20Kernel%20Module%20that%20I%20wrote%2046ae6d53b6c047da9b865306bfc8a195/Untitled.png)
 
 The soft link, `build`  underlined with yellow line, it points to the location where these headers reside. Now, one question might arise, how does our module accesses them? So, to answer that, we describe in our makefile where to look for the header, so when we compile the module, the compiler resolves by searching in the location where these headers reside.
 
@@ -154,7 +154,7 @@ $ sudo dmesg | tail -n2
 
 and this is the output from my machine
 
-![Untitled](The%20First%20Kernel%20Module%20that%20I%20wrote%2046ae6d53b6c047da9b865306bfc8a195/Untitled%201.png)
+![Untitled](https://raw.githubusercontent.com/rast-7/blog/2063e8c1dbe573d10e212a55154052762d75faa9/content/articles/The%20First%20Kernel%20Module%20that%20I%20wrote%2046ae6d53b6c047da9b865306bfc8a195/Untitled%201.png)
 
 ## Removing the module from the kernel memory
 
@@ -170,7 +170,7 @@ and just like before, we will use `dmesg` to check the whether our module really
 sudo dmesg | tail -n1
 ```
 
-![Untitled](The%20First%20Kernel%20Module%20that%20I%20wrote%2046ae6d53b6c047da9b865306bfc8a195/Untitled%202.png)
+![Untitled](https://raw.githubusercontent.com/rast-7/blog/2063e8c1dbe573d10e212a55154052762d75faa9/content/articles/The%20First%20Kernel%20Module%20that%20I%20wrote%2046ae6d53b6c047da9b865306bfc8a195/Untitled%202.png)
 
 and it did!!
 
