@@ -22,7 +22,7 @@ And also whenever we talk about threads, we mostly are thinking of different thi
 
 Oh! how can we discuss anatomy without an image! So following is how a process looks!
 
-![Untitled](My%20understanding%20of%20Processes%20and%20Threads!%20d9844200efdc4b9c84afb88791d57726/Untitled.png)
+![Anatomy of a process](https://raw.githubusercontent.com/rast-7/blog/master/content/articles/My%20understanding%20of%20Processes%20and%20Threads!%20d9844200efdc4b9c84afb88791d57726/Untitled.png)
 
 Well this is really a bad drawing! This proves, I cant even use paint 😢 But hope it conveys the idea.
 
