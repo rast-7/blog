@@ -31,7 +31,7 @@ Each doubly linked circular list points to free physical contiguous page frames 
 
 The kernel gives us a convenient view into the current stat of the page allocator via the `/proc` filesystem. Just check the output of `cat /proc/buddyinfo`. This is what the output looks like on my system: 
 
-![Untitled](Physical%20memory%20organization%20and%20memory%20allocation%2093cee87d285e4fa694431edce6cb507c/Untitled.png)
+![My system's view of buddyinfo](https://raw.githubusercontent.com/rast-7/blog/master/content/articles/Physical%20memory%20organization%20and%20memory%20allocation%2093cee87d285e4fa694431edce6cb507c/Untitled.png)
 
 This also tells a lot about my system, it has only single node, which means just one RAM. There are 3 zones: DMA, DMA32 and Normal. After that there are 10 columns. These 10 columns are nothing but the number of free (physically contiguous) page frames in order 0, order 1, right up to order 10.
 
