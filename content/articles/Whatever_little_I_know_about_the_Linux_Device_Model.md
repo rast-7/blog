@@ -18,7 +18,7 @@ In the Linux Kernel, devices are organized within a tree-like hierarchy within t
 
 So, if you go to `/dev` directory on your system and execute `ls -l` command, it will list the devices connected to your system. This is a screenshot of a part of the output I got on my terminal...
 
-![Untitled](Whatever%20little%20I%20know%20about%20the%20Linux%20Device%20Mode%202ccc6a993196409cba9957c34b3bb041/Untitled.png)
+![Untitled](https://raw.githubusercontent.com/rast-7/blog/master/content/articles/Whatever%20little%20I%20know%20about%20the%20Linux%20Device%20Mode%202ccc6a993196409cba9957c34b3bb041/Untitled.png)
 
 Please notice the first column, which shows the type of file and the permissions. The first character (the one underlined in red) represents the type of file. So, in this figure you are only seeing three file types, but there can be 7 types of files: 
 
@@ -44,7 +44,7 @@ The minor number's meaning is decided by the driver author. For example, a stora
 
 We can use the following figure to keep these things in mind. Please note that I have only shown block and char devices, but there are more devices...
 
-![Untitled Diagram-Page-4.svg](Whatever%20little%20I%20know%20about%20the%20Linux%20Device%20Mode%202ccc6a993196409cba9957c34b3bb041/Untitled_Diagram-Page-4.svg)
+![Untitled Diagram-Page-4.svg](https://raw.githubusercontent.com/rast-7/blog/cce9ed02db788958fb6fd82329a030ac6c216278/content/articles/Whatever%20little%20I%20know%20about%20the%20Linux%20Device%20Mode%202ccc6a993196409cba9957c34b3bb041/Untitled_Diagram-Page-4.svg)
 
 Now, with these basic things in mind, lets talk about the Linux Device Model!
 
