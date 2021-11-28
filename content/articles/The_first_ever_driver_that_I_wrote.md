@@ -1,5 +1,5 @@
 ---
-title: "Whatever Little I know about the Linux Device Model!"
+title: "The first ever driver that I wrote"
 date: "2021-11-01"
 type: "article"
 ---
