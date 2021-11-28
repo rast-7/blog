@@ -74,7 +74,7 @@ static ssize_t read(struct file *f, char __user *buf, size_t count, loff_t *offs
 
 First of all, how did I know the signature of the `read` function? As we discussed in section 2, in `file_operations` structure we map the system calls to function pointers which should be invoked, when that function call is called from the user space program. So, if you go ahead and take a look at the file `include/linux/fs.h` in the linux kernel source. You will find this:
 
-![Untitled](The%20first%20ever%20driver%20that%20I%20wrote!%204f6982c819124ddd878d98d7a56517d0/Untitled.png)
+![Untitled](https://raw.githubusercontent.com/rast-7/blog/master/content/articles/The%20first%20ever%20driver%20that%20I%20wrote!%204f6982c819124ddd878d98d7a56517d0/Untitled.png)
 
 So, this structure has members which are function pointers. If you take a look at the `read` field, you will notice that the definition is same what you see in this screenshot! That is how I got to know the definition of the `read` function.
 
@@ -212,7 +212,7 @@ So, in order to test our device driver we will do two things:
 
 The following screenshot does it all!
 
-![Untitled](The%20first%20ever%20driver%20that%20I%20wrote!%204f6982c819124ddd878d98d7a56517d0/Untitled%201.png)
+![Untitled](https://raw.githubusercontent.com/rast-7/blog/master/content/articles/The%20first%20ever%20driver%20that%20I%20wrote!%204f6982c819124ddd878d98d7a56517d0/Untitled%201.png)
 
 Notice the output when we did `ls -l` in `/dev/rastonit`. Our device got registered as a char device. The proof that it is a device of `misc` class can be found by looking at the `major number` which is `10` here. The dynamically allocated `minor number` for our device was `119`.
 
