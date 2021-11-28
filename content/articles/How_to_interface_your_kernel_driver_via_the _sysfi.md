@@ -149,7 +149,7 @@ I am trusting you to write the Makefile 👊
 
 We will verify be checking if the file named `id` exists inside a folder named `sys/kernel/rastonit`. Here is what is looks like on my system:
 
-![Untitled](How%20to%20interface%20your%20kernel%20driver%20via%20the%20sys%20fi%2042bfaa1bbe5442009fb2a8b85c33427a/Untitled.png)
+![Untitled](https://raw.githubusercontent.com/rast-7/blog/master/content/articles/How%20to%20interface%20your%20kernel%20driver%20via%20the%20sys%20fi%2042bfaa1bbe5442009fb2a8b85c33427a/Untitled.png)
 
 Notice that we do have a file called `id` under `/sys/kernel/rastonit` directory!
 
